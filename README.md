@@ -19,7 +19,7 @@ Currently working on projects that combine design and development to help small 
 ### 🌍 Portfolio Websites
 - [021 Tours & Travels](https://021toursandtravels.com/) – Vehicle hire fleet website built using Wordpress Elementor
 - [Dorados Venue](https://www.doradosvenue.com/) – Website was built using Wix and custom html and css code | Event hire website  
-- [JBV Auto](https://jbvauto.co.za/) – Built using WordPress, this is a car buy and sell platform
+- [JBV Auto](https://jbvauto.co.za/) – Built using WordPress, this is a car marketplace
 
 ---
 
