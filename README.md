@@ -31,7 +31,6 @@ Currently working on projects that combine design and development to help small 
 ---
 
 ### 📫 Let’s Connect
-- 💼 [LinkedIn](www.linkedin.com/in/azraa-stemmet)
 - 📧 **azraastemmet@gmail.com**
 
 ---
