@@ -1,35 +1,28 @@
-# 👋 Hi, I'm Azraa Stemmet
+# Azraa Stemmet
 
-### 💻 Frontend Developer | Informatics & Psychology Graduate
+Frontend developer in Cape Town, with a BSocSci in Informatics and Psychology from UCT.
 
-I’m passionate about creating **responsive**, **user-friendly**, and **visually appealing** websites.  
-Currently engineering fintech interfaces at **Traderoot Technologies** in Cape Town, and building tailored digital solutions for clients through **Z&A Digital**.
+I build fintech interfaces at **Traderoot Technologies** and websites for clients through **Z&A Digital**, which I co-founded.
 
----
+## Tech stack
 
-### 🛠️ Tech Stack
 - **Languages:** HTML, CSS, JavaScript, C#, Python
-- **Frameworks/Libraries:** React, React Native
-- **CMS Tools:** WordPress (Elementor, WooCommerce, WPForms), Wix
+- **Frameworks and libraries:** React, React Native
+- **CMS tools:** WordPress (Elementor, WooCommerce, WPForms), Wix
 - **Databases:** Firebase, MySQL, SQL
-- **Version Control:** Git & GitHub
+- **Version control:** Git and GitHub
 
----
+## Work
 
-### 🌍 Portfolio Websites
-- [Traderoot Europe Redesign](https://traderooteurope.com/) – Full site redesign built on WordPress/Elementor
-- [Dorados Venue](https://www.doradosvenue.com/) – Event hire and booking website built using Wix
-- [Naiema's Nursery](https://azraastemmet.github.io/the-nursery/) – Nursery website built with HTML, CSS & JavaScript *(work in progress)*
-- [Noor Corner](https://github.com/AzraaStemmet/The-Noor-Corner) – Personal project *(work in progress)*
+- [Traderoot Europe](https://traderooteurope.com/): full site redesign built on WordPress and Elementor
+- [Dorados Venue](https://www.doradosvenue.com/): event hire and booking website built on Wix
+- [Naiema's Nursery](https://azraastemmet.github.io/the-nursery/): plant shop site built with HTML, CSS and JavaScript (work in progress)
+- [The Donkey Diary](https://github.com/AzraaStemmet/TheDonkeyDiary): React Native and Firebase app for tracking donkey health, a Top 17 project at UCT in 2024
 
----
+## This site
 
+A single `index.html` with plain HTML and CSS and no build step. Project screenshots live in `assets/` as WebP, captured from the live sites at desktop and phone widths.
 
----
+## Contact
 
-### 📫 Let’s Connect
-- 📧 **Azraa.stemmet04@gmail.com**
-
----
-
-⭐️ *“Turning ideas into digital experiences that inspire.”*
+Azraa.stemmet04@gmail.com
