@@ -5,148 +5,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Azraa Stemmet, Frontend Developer in Cape Town</title>
 <meta name="description" content="Azraa Stemmet, frontend developer in Cape Town. Fintech interfaces at Traderoot Technologies and websites for clients through Z&amp;A Digital.">
+<meta name="theme-color" content="#0b0a0d">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Instrument+Serif:ital@1&family=Unbounded:wght@500;600;800&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/traderoot-desktop.webp" type="image/webp">
-<style>
-*,*::before,*::after{box-sizing:border-box}
-body,h1,h2,h3,p,ul,ol,figure,dl,dd{margin:0}
-ul,ol{padding:0;list-style:none}
-img{display:block;max-width:100%;height:auto}
-
-:root{
-  color-scheme:light;
-  --paper:#f6f3ee;
-  --paper-2:#efeae2;
-  --ink:#1c1a17;
-  --muted:#5c574f;
-  --line:#dcd5ca;
-  --accent:#9a3b1f;
-  --serif:'Newsreader',Georgia,'Times New Roman',serif;
-  --sans:'Public Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
-  --wrap:72rem;
-  --gutter:clamp(1rem,4vw,2.5rem);
-}
-
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{background:var(--paper);color:var(--ink);font:400 1.0625rem/1.65 var(--sans)}
-
-a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.2em}
-a:hover{color:var(--accent)}
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
-
-.skip{position:absolute;left:var(--gutter);top:-3rem;background:var(--ink);color:var(--paper);padding:.5rem .9rem;z-index:10}
-.skip:focus{top:.75rem;color:var(--paper)}
-
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter)}
-
-h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;line-height:1.1}
-h2{font-size:clamp(2rem,4.5vw,2.75rem);margin-bottom:2.5rem}
-
-/* Header */
-.site-header{border-bottom:1px solid var(--line)}
-.site-header .wrap{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.5rem 2rem;padding-top:1.25rem;padding-bottom:1.25rem}
-.site-name{font-family:var(--serif);font-size:1.3rem;text-decoration:none}
-.site-nav ul{display:flex;flex-wrap:wrap;gap:.25rem 1.5rem}
-.site-nav a{text-decoration:none;color:var(--muted)}
-.site-nav a:hover{color:var(--accent)}
-
-/* Intro */
-.intro{padding:clamp(4rem,10vw,7.5rem) 0 clamp(3.5rem,8vw,6rem)}
-.intro h1{font-size:clamp(2.4rem,6.2vw,4.4rem);max-width:17ch;margin-bottom:1.75rem}
-.intro p{max-width:36rem;color:var(--muted);font-size:1.125rem}
-.intro p + p{margin-top:1rem}
-.intro-links{display:flex;flex-wrap:wrap;gap:1rem 2rem;margin-top:2.25rem}
-.intro-links a{font-weight:500}
-.btn{display:inline-block;background:var(--ink);color:var(--paper);text-decoration:none;padding:.8rem 1.4rem;border-radius:4px}
-.btn:hover{background:var(--accent);color:var(--paper)}
-.intro-links .text-link{align-self:center}
-
-section{scroll-margin-top:1rem}
-
-/* Work */
-.work{padding:clamp(3rem,7vw,5rem) 0}
-.project{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(2rem,5vw,4.5rem);align-items:center;padding:clamp(2.5rem,6vw,4.5rem) 0;border-top:1px solid var(--line)}
-.project:last-child{border-bottom:1px solid var(--line)}
-.project:nth-child(even) .shots{order:2}
-
-.shots{position:relative;padding:0 12% 9% 0}
-.project:nth-child(even) .shots{padding:0 0 9% 12%}
-.shot{background:var(--paper-2);border:1px solid var(--line);box-shadow:0 1px 2px rgba(28,26,23,.06),0 18px 40px -22px rgba(28,26,23,.35)}
-.shot-desktop{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;border-radius:6px}
-.shot-mobile{position:absolute;right:0;bottom:0;width:27%;aspect-ratio:390/760;object-fit:cover;object-position:top;border-radius:12px}
-.project:nth-child(even) .shot-mobile{right:auto;left:0}
-
-.shots-phones{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(.6rem,2vw,1.25rem);padding:0}
-.project:nth-child(even) .shots-phones{padding:0}
-.shots-phones .shot{width:100%;aspect-ratio:390/664;object-fit:cover;object-position:top;border-radius:12px}
-.shots-phones figcaption{grid-column:1/-1;font-size:.875rem;color:var(--muted);margin-top:.25rem}
-
-.project h3{font-size:clamp(1.6rem,3vw,2.1rem);margin-bottom:.9rem}
-.outcome{font-size:1.125rem;margin-bottom:1rem}
-.project .detail{color:var(--muted);margin-bottom:1.25rem}
-.meta{display:grid;grid-template-columns:auto 1fr;gap:.35rem 1.25rem;font-size:.9375rem;margin-bottom:1.5rem}
-.meta dt{color:var(--muted)}
-.project-link{font-weight:500}
-
-/* Experience */
-.experience{padding:clamp(3rem,7vw,5rem) 0}
-.jobs > li{display:grid;grid-template-columns:12rem minmax(0,1fr);gap:.5rem 2.5rem;padding:2rem 0;border-top:1px solid var(--line)}
-.jobs > li:last-child{border-bottom:1px solid var(--line)}
-.job-date{color:var(--muted);font-size:.9375rem;padding-top:.3rem}
-.jobs h3{font-size:1.45rem;margin-bottom:.2rem}
-.job-org{color:var(--muted);margin-bottom:.9rem}
-.job-points li{position:relative;padding-left:1.1rem;margin-top:.45rem;max-width:44rem}
-.job-points li::before{content:'';position:absolute;left:0;top:.72em;width:.4rem;height:1px;background:var(--muted)}
-
-/* Skills */
-.skills{padding:clamp(3rem,7vw,5rem) 0}
-.skill-groups{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2rem 2.5rem}
-.skill-groups h3{font-family:var(--sans);font-size:1rem;font-weight:600;letter-spacing:0;margin-bottom:.75rem}
-.skill-groups li{color:var(--muted);padding:.2rem 0}
-
-/* About */
-.about{padding:clamp(3rem,7vw,5rem) 0}
-.about-grid{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:2.5rem 4rem}
-.about-text p{max-width:38rem}
-.about-text p + p{margin-top:1rem}
-.education{background:var(--paper-2);border:1px solid var(--line);border-radius:6px;padding:1.75rem}
-.education h3{font-size:1.35rem;margin-bottom:.35rem}
-.education .school{color:var(--muted);margin-bottom:1.25rem}
-.education h4{font-size:1rem;font-weight:600;margin:0 0 .5rem}
-.education li{color:var(--muted);padding:.15rem 0}
-
-/* Contact */
-.contact{padding:clamp(3.5rem,8vw,6rem) 0;border-top:1px solid var(--line)}
-.contact > .wrap > p{max-width:36rem;color:var(--muted);font-size:1.125rem;margin:-1rem 0 2.25rem}
-.contact-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem 2rem}
-.contact-list dt{color:var(--muted);font-size:.9375rem;margin-bottom:.2rem}
-.contact-list dd{font-size:1.125rem;overflow-wrap:anywhere}
-
-.site-footer{border-top:1px solid var(--line);font-size:.9375rem;color:var(--muted)}
-.site-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 2rem;padding-top:1.5rem;padding-bottom:1.5rem}
-
-@media (max-width:960px){
-  .skill-groups{grid-template-columns:repeat(2,minmax(0,1fr))}
-}
-@media (max-width:760px){
-  .project{grid-template-columns:minmax(0,1fr);gap:1.75rem}
-  .project:nth-child(even) .shots{order:0}
-  .jobs > li{grid-template-columns:minmax(0,1fr)}
-  .job-date{padding-top:0}
-  .about-grid{grid-template-columns:minmax(0,1fr)}
-  .contact-list{grid-template-columns:minmax(0,1fr)}
-}
-@media (max-width:480px){
-  .skill-groups{grid-template-columns:minmax(0,1fr)}
-}
-</style>
+<link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.classList.add('js');</script>
+<script src="js/main.js" defer></script>
 </head>
 <body>
 
 <a class="skip" href="#main">Skip to content</a>
+
+<div class="pac-rail" aria-hidden="true">
+  <div class="pac-track">
+    <div class="pac-dots"></div>
+    <a class="pellet" href="#work" tabindex="-1"><span>Work</span></a>
+    <a class="pellet" href="#experience" tabindex="-1"><span>Experience</span></a>
+    <a class="pellet" href="#skills" tabindex="-1"><span>Skills</span></a>
+    <a class="pellet" href="#about" tabindex="-1"><span>About</span></a>
+    <a class="pellet" href="#contact" tabindex="-1"><span>Contact</span></a>
+    <div class="pac" data-face="fwd">
+      <svg viewBox="0 0 28 28">
+        <path class="mouth-open" fill="#ff5ca8" d="M14 14 L27 7 A14 14 0 1 0 27 21 Z"/>
+        <circle class="mouth-shut" fill="#ff5ca8" cx="14" cy="14" r="14"/>
+        <circle fill="#0b0a0d" cx="14" cy="7" r="2.2"/>
+      </svg>
+    </div>
+    <svg class="ghost" viewBox="0 0 22 24"><path fill="currentColor" d="M11 0C4.9 0 0 4.9 0 11v13l3.7-3 3.6 3L11 21l3.7 3 3.6-3 3.7 3V11C22 4.9 17.1 0 11 0Z"/><circle fill="#f6f1f8" cx="7.5" cy="10" r="2.6"/><circle fill="#f6f1f8" cx="14.5" cy="10" r="2.6"/><circle fill="#0e0c11" cx="8.3" cy="10.6" r="1.2"/><circle fill="#0e0c11" cx="15.3" cy="10.6" r="1.2"/></svg>
+  </div>
+</div>
 
 <header class="site-header">
   <div class="wrap">
@@ -166,79 +55,95 @@ section{scroll-margin-top:1rem}
 
   <section class="intro" id="top" aria-labelledby="intro-heading">
     <div class="wrap">
-      <h1 id="intro-heading">I build fintech interfaces and small business websites, from Cape Town.</h1>
-      <p>I'm a frontend developer at Traderoot Technologies, where I work on the interfaces for Core Accounts and Electronic Value Distribution.</p>
-      <p>I also co-founded Z&amp;A Digital, where I design and build websites for clients on WordPress and Wix, from the first Figma wireframe to launch.</p>
-      <div class="intro-links">
-        <a class="btn" href="#work">See my work</a>
-        <a class="text-link" href="mailto:Azraa.stemmet04@gmail.com">Azraa.stemmet04@gmail.com</a>
+      <div class="poster">
+        <h1 class="poster-name" id="intro-heading"><span class="line">Azraa</span> <span class="line">Stemmet</span></h1>
+        <canvas class="poster-canvas" aria-hidden="true"></canvas>
+      </div>
+      <div class="intro-grid">
+        <p class="intro-lede">Frontend developer building <em>fintech interfaces</em> and <em>client websites</em> in Cape Town.</p>
+        <div class="intro-body">
+          <p>I am a frontend developer at Traderoot Technologies, where I lead the development of fintech interfaces for Core Accounts and Electronic Value Distribution.</p>
+          <p>I am also the co-founder of Z&amp;A Digital, through which I design and deliver websites for clients on WordPress and Wix. I hold a Bachelor of Social Science in Informatics and Psychology from the University of Cape Town.</p>
+          <div class="intro-actions">
+            <a class="btn btn-primary" href="#work">View my work</a>
+            <a class="btn btn-secondary" href="#contact">Contact me</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="work" id="work" aria-labelledby="work-heading">
     <div class="wrap">
-      <h2 id="work-heading">Selected work</h2>
+      <h2 id="work-heading">Selected <em>work</em></h2>
+
+      <ol class="work-index" aria-label="Project index">
+        <li><a class="index-row" href="#p-traderoot" data-preview="assets/traderoot-desktop.webp"><span class="index-num">01</span><span class="index-name">Traderoot Europe</span><span class="index-type">WordPress redesign</span><svg class="index-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 5l6 6M11 6v5H6" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a class="index-row" href="#p-dorados" data-preview="assets/dorados-desktop.webp"><span class="index-num">02</span><span class="index-name">Dorados Venue</span><span class="index-type">Wix venue site</span><svg class="index-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 5l6 6M11 6v5H6" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a class="index-row" href="#p-donkey" data-preview="assets/donkeydiary-home-mobile.webp" data-shape="tall"><span class="index-num">03</span><span class="index-name">The Donkey Diary</span><span class="index-type">React Native app</span><svg class="index-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 5l6 6M11 6v5H6" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a class="index-row" href="#p-nursery" data-preview="assets/nursery-desktop.webp"><span class="index-num">04</span><span class="index-name">Naiema's Nursery</span><span class="index-type">Plant shop site</span><svg class="index-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 5l6 6M11 6v5H6" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+      </ol>
 
       <div class="projects">
 
-        <article class="project">
-          <figure class="shots">
+        <article class="project" id="p-traderoot">
+          <figure class="shots reveal">
             <img class="shot shot-desktop" src="assets/traderoot-desktop.webp" width="1600" height="1000" alt="Traderoot Europe home page on desktop: a night view of the globe behind the headline Technology Solutions for Your Commercial Requirements." fetchpriority="high">
             <img class="shot shot-mobile" src="assets/traderoot-mobile.webp" width="780" height="1688" alt="Traderoot Europe home page on a phone, with the menu collapsed and the introduction text below the header." loading="lazy" decoding="async">
           </figure>
-          <div>
+          <div class="reveal">
             <h3>Traderoot Europe</h3>
             <p class="outcome">A full redesign of the site for Traderoot's European business, with a new visual identity, layout and messaging.</p>
             <dl class="meta">
               <dt>Role</dt><dd>Redesign and build</dd>
               <dt>Built with</dt><dd>WordPress, Elementor</dd>
             </dl>
-            <a class="project-link" href="https://traderooteurope.com/">Visit traderooteurope.com</a>
+            <a class="project-link" href="https://traderooteurope.com/">Visit traderooteurope.com <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
         </article>
 
-        <article class="project">
-          <figure class="shots">
+        <article class="project" id="p-dorados">
+          <figure class="shots reveal">
             <img class="shot shot-desktop" src="assets/dorados-desktop.webp" width="1600" height="1000" alt="Dorados Venue home page on desktop: Welcome to Dorados over a photo of a thatched roof hung with white flowers." loading="lazy" decoding="async">
             <img class="shot shot-mobile" src="assets/dorados-mobile.webp" width="780" height="1326" alt="Dorados Venue home page on a phone, showing the welcome banner and the start of the About Us section." loading="lazy" decoding="async">
           </figure>
-          <div>
+          <div class="reveal">
             <h3>Dorados Venue</h3>
             <p class="outcome">A venue hire website that puts the gallery, pricing and services in one place for people planning an event.</p>
             <dl class="meta">
               <dt>Role</dt><dd>UI design and build</dd>
               <dt>Built with</dt><dd>Wix, booking system</dd>
             </dl>
-            <a class="project-link" href="https://www.doradosvenue.com/">Visit doradosvenue.com</a>
+            <a class="project-link" href="https://www.doradosvenue.com/">Visit doradosvenue.com <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
         </article>
 
-        <article class="project">
-          <figure class="shots shots-phones">
+        <article class="project" id="p-donkey">
+          <figure class="shots shots-phones reveal">
             <img class="shot" src="assets/donkeydiary-welcome-mobile.webp" width="780" height="1328" alt="The Donkey Diary welcome screen with Sign Up and Login buttons." loading="lazy" decoding="async">
             <img class="shot" src="assets/donkeydiary-home-mobile.webp" width="780" height="1328" alt="The Donkey Diary home screen with buttons to register, search, view donkeys and view reports." loading="lazy" decoding="async">
             <img class="shot" src="assets/donkeydiary-register-mobile.webp" width="780" height="1328" alt="The Donkey Diary registration form with fields for ID, name, gender, age, owner, health care worker and location." loading="lazy" decoding="async">
             <figcaption>Welcome, home and donkey registration screens.</figcaption>
           </figure>
-          <div>
+          <div class="reveal">
+            <p class="badge">Top 17 project, UCT 2024</p>
             <h3>The Donkey Diary</h3>
-            <p class="outcome">A mobile app for tracking donkey health in rural villages, selected as a Top 17 project at UCT in 2024.</p>
+            <p class="outcome">A mobile app for tracking donkey health in rural villages.</p>
             <p class="detail">It is built to use little data and to work with poor connectivity, and it tags records with a location and supports image uploads.</p>
             <dl class="meta">
               <dt>Role</dt><dd>Full stack development</dd>
               <dt>Built with</dt><dd>React Native, Expo, Firebase, Firestore</dd>
             </dl>
-            <a class="project-link" href="https://github.com/AzraaStemmet/TheDonkeyDiary">View the code on GitHub</a>
+            <a class="project-link" href="https://github.com/AzraaStemmet/TheDonkeyDiary">View the code on GitHub <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
         </article>
 
-        <article class="project">
-          <figure class="shots">
+        <article class="project" id="p-nursery">
+          <figure class="shots reveal">
             <img class="shot shot-desktop" src="assets/nursery-desktop.webp" width="1600" height="1000" alt="Naiema's Nursery home page on desktop: large green leaves behind the tagline Plants that bring life home." loading="lazy" decoding="async">
             <img class="shot shot-mobile" src="assets/nursery-mobile.webp" width="780" height="1688" alt="Naiema's Nursery on a phone, showing the Featured Plants section with a Monstera plant card." loading="lazy" decoding="async">
           </figure>
-          <div>
+          <div class="reveal">
             <h3>Naiema's Nursery</h3>
             <p class="outcome">A plant shop site that shows which plants are in stock, with care tips for each one.</p>
             <p class="detail">A personal project that is still in progress.</p>
@@ -246,7 +151,7 @@ section{scroll-margin-top:1rem}
               <dt>Role</dt><dd>Design and build</dd>
               <dt>Built with</dt><dd>HTML, CSS, JavaScript</dd>
             </dl>
-            <a class="project-link" href="https://azraastemmet.github.io/the-nursery/">Visit the live site</a>
+            <a class="project-link" href="https://azraastemmet.github.io/the-nursery/">Visit the live site <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
         </article>
 
@@ -258,7 +163,7 @@ section{scroll-margin-top:1rem}
     <div class="wrap">
       <h2 id="experience-heading">Experience</h2>
       <ol class="jobs">
-        <li>
+        <li class="reveal">
           <p class="job-date">Nov 2025 to present</p>
           <div>
             <h3>Front-end Developer</h3>
@@ -272,7 +177,7 @@ section{scroll-margin-top:1rem}
             </ul>
           </div>
         </li>
-        <li>
+        <li class="reveal">
           <p class="job-date">Dec 2024 to present</p>
           <div>
             <h3>Freelance Web Developer and Co-founder</h3>
@@ -284,7 +189,7 @@ section{scroll-margin-top:1rem}
             </ul>
           </div>
         </li>
-        <li>
+        <li class="reveal">
           <p class="job-date">May 2025 to Aug 2025</p>
           <div>
             <h3>Web Developer</h3>
@@ -294,8 +199,8 @@ section{scroll-margin-top:1rem}
             </ul>
           </div>
         </li>
-        <li>
-          <p class="job-date">Jan 2024 to Oct 2024</p>
+        <li class="reveal">
+          <p class="job-date">Feb 2024 to Oct 2024</p>
           <div>
             <h3>Deputy Head Tutor, Information Systems</h3>
             <p class="job-org">University of Cape Town, part-time</p>
@@ -313,7 +218,7 @@ section{scroll-margin-top:1rem}
     <div class="wrap">
       <h2 id="skills-heading">Skills</h2>
       <div class="skill-groups">
-        <div>
+        <div class="skill-group reveal">
           <h3>Languages and frameworks</h3>
           <ul>
             <li>JavaScript</li>
@@ -325,7 +230,7 @@ section{scroll-margin-top:1rem}
             <li>Python</li>
           </ul>
         </div>
-        <div>
+        <div class="skill-group reveal">
           <h3>Platforms and tools</h3>
           <ul>
             <li>WordPress and Elementor</li>
@@ -338,7 +243,7 @@ section{scroll-margin-top:1rem}
             <li>Ubuntu and Linux</li>
           </ul>
         </div>
-        <div>
+        <div class="skill-group reveal">
           <h3>Ways of working</h3>
           <ul>
             <li>Agile and Waterfall</li>
@@ -350,7 +255,7 @@ section{scroll-margin-top:1rem}
             <li>Mobile-first development</li>
           </ul>
         </div>
-        <div>
+        <div class="skill-group reveal">
           <h3>Learning now</h3>
           <ul>
             <li>PHP</li>
@@ -365,11 +270,11 @@ section{scroll-margin-top:1rem}
     <div class="wrap">
       <h2 id="about-heading">About</h2>
       <div class="about-grid">
-        <div class="about-text">
-          <p>I'm Azraa, a frontend developer in Cape Town. I studied Informatics and Psychology at UCT, so I think about the people using an interface as much as the code behind it.</p>
-          <p>My days are split between Traderoot, where I build and test fintech interfaces with the backend team, and Z&amp;A Digital, where I take client sites from a first conversation to a live website. Before that I was deputy head tutor for Information Systems at UCT.</p>
+        <div class="about-text reveal">
+          <p>I am a frontend developer based in Cape Town. My degree combines Informatics and Psychology, and I apply both in my work: sound engineering on one side, and close attention to the people who use the interfaces I build on the other.</p>
+          <p>At Traderoot Technologies I build and test fintech interfaces alongside the backend team. Through Z&amp;A Digital I take client websites from the first conversation through to launch. Before this, I served as Deputy Head Tutor for Information Systems at the University of Cape Town.</p>
         </div>
-        <div class="education">
+        <div class="education reveal">
           <h3>Bachelor of Social Science, Informatics and Psychology</h3>
           <p class="school">University of Cape Town, graduated 2026</p>
           <h4>Relevant coursework</h4>
@@ -389,22 +294,25 @@ section{scroll-margin-top:1rem}
 
   <section class="contact" id="contact" aria-labelledby="contact-heading">
     <div class="wrap">
-      <h2 id="contact-heading">Contact</h2>
-      <p>I'm open to full-time roles, freelance work and collaborations.</p>
-      <dl class="contact-list">
-        <div>
-          <dt>Email</dt>
-          <dd><a href="mailto:Azraa.stemmet04@gmail.com">Azraa.stemmet04@gmail.com</a></dd>
-        </div>
-        <div>
-          <dt>Phone</dt>
-          <dd><a href="tel:+27632546505">+27 63 254 6505</a></dd>
-        </div>
-        <div>
-          <dt>GitHub</dt>
-          <dd><a href="https://github.com/AzraaStemmet">AzraaStemmet</a></dd>
-        </div>
-      </dl>
+      <div class="contact-card reveal">
+        <h2 id="contact-heading">Contact</h2>
+        <p>I am open to full-time roles, freelance work and collaborations.</p>
+        <a class="contact-email" href="mailto:Azraa.stemmet04@gmail.com">Azraa.stemmet04@gmail.com</a>
+        <dl class="contact-list">
+          <div>
+            <dt>Phone</dt>
+            <dd><a href="tel:+27632546505">+27 63 254 6505</a></dd>
+          </div>
+          <div>
+            <dt>GitHub</dt>
+            <dd><a href="https://github.com/AzraaStemmet">AzraaStemmet</a></dd>
+          </div>
+          <div>
+            <dt>LinkedIn</dt>
+            <dd><a href="https://www.linkedin.com/in/azraa-stemmet">azraa-stemmet</a></dd>
+          </div>
+        </dl>
+      </div>
     </div>
   </section>
 

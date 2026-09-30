@@ -21,8 +21,14 @@ I build fintech interfaces at **Traderoot Technologies** and websites for client
 
 ## This site
 
-A single `index.html` with plain HTML and CSS and no build step. Project screenshots live in `assets/` as WebP, captured from the live sites at desktop and phone widths.
+Plain HTML, CSS and JavaScript with no build step. Open `index.html` in a browser to view it.
+
+- `index.html`: page markup and content
+- `css/styles.css`: all styles
+- `js/main.js`: the pellet name in the intro, scroll reveals, the project index preview and the Pac-Man scroll guide
+- `assets/`: project screenshots as WebP, captured from the live sites at desktop and phone widths
 
 ## Contact
 
-Azraa.stemmet04@gmail.com
+- Email: Azraa.stemmet04@gmail.com
+- LinkedIn: [azraa-stemmet](https://www.linkedin.com/in/azraa-stemmet)
